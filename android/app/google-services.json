@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1020095996174",
+    "project_id": "forget-password-e3a32",
+    "storage_bucket": "forget-password-e3a32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020095996174:android:da0b6ffbab147c3f23775f",
+        "android_client_info": {
+          "package_name": "com.example.forget_password"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1020095996174-bh8f49q9nln1f9i2j5ektnjdr5jg37jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-2fUVsLdoCQx-5MHxiy5jpEyN-redhcI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1020095996174-bh8f49q9nln1f9i2j5ektnjdr5jg37jj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
