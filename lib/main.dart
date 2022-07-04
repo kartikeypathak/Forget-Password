@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:forget_password/forget_pass.dart';
-
+import './forget_pass.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -8,8 +7,24 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: ForgetPassword(),
+      title: 'Material App',
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Hyginiee Test Reset'),
+          backgroundColor: Colors.deepPurple[200],
+          elevation: 0,
+        ),
+        body: MaterialButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ForgetPassword()),
+            );
+          },
+          color: Colors.deepPurple[200],
+          child: const Text('Reset Password'),
+        ),
+      ),
     );
   }
 }
