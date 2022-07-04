@@ -89,7 +89,8 @@ class _ForgetPasswordState extends State<ForgetPassword> {
             onPressed: () => passwordReset(),
             child: Text('Reset Password'),
             color: Colors.deepPurple[200],
-          )
+          ),
+          MaterialApp(debugShowCheckedModeBanner: false,)
         ],
       ),
     );
