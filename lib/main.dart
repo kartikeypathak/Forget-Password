@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Hyginiee Test Reset'),
-          backgroundColor: Colors.deepPurple[200],
+          backgroundColor: Colors.blue[450],
           elevation: 0,
         ),
         body: MaterialButton(
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
               MaterialPageRoute(builder: (context) => ForgetPassword()),
             );
           },
-          color: Colors.deepPurple[200],
+          color: Colors.blue[400],
           child: const Text('Reset Password'),
         ),
       ),

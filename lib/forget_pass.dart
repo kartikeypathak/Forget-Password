@@ -46,7 +46,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple[200],
+        backgroundColor: Colors.blue[450],
         elevation: 0,
       ),
       body: Column(
@@ -55,7 +55,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 25.0),
             child: Text(
-              'Enter your E-mail and we will send you a password reset link',
+              'A mail will be sent to your email to reset your password',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 20),
             ),
@@ -69,15 +69,15 @@ class _ForgetPasswordState extends State<ForgetPassword> {
               controller: _emailController,
               decoration: InputDecoration(
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white),
+                  borderSide: BorderSide(color: Colors.grey),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.deepPurple),
+                  borderSide: BorderSide(color: Colors.blue),
                   borderRadius: BorderRadius.circular(12),
                 ),
-                hintText: 'E-mail',
-                fillColor: Colors.grey[200],
+                hintText: 'Enter E-mail',
+                fillColor: Colors.white,
                 filled: true,
               ),
             ),
@@ -85,12 +85,37 @@ class _ForgetPasswordState extends State<ForgetPassword> {
           SizedBox(
             height: 10,
           ),
-          MaterialButton(
-            onPressed: () => passwordReset(),
-            child: Text('Reset Password'),
-            color: Colors.deepPurple[200],
+          SizedBox(
+            width: 360,
+            // height: 25,
+            child: MaterialButton(
+              onPressed: () => passwordReset(),
+              color: Colors.blue[400],
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.email,
+                    color: Colors.white,
+                  ),
+                  SizedBox(
+                    width: 6,
+                  ),
+                  Text(
+                    'Send E-mail',
+                    style: TextStyle(fontSize: 18, color: Colors.white),
+                  ),
+                ],
+              ),
+              // child: Text(
+              //   'Send E-mail',
+              //   style: TextStyle(fontSize: 18.0, color: Colors.white),
+              // ),
+            ),
           ),
-          MaterialApp(debugShowCheckedModeBanner: false,)
+          MaterialApp(
+            debugShowCheckedModeBanner: false,
+          )
         ],
       ),
     );
